@@ -82,6 +82,31 @@ li a {
   margin: 0px;
 }
 
+.slide-left {
+	-webkit-animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
 .follow-me {
   list-style: none;
   margin: 0 0 -8px;
@@ -113,7 +138,7 @@ li a {
   color: #fff;
 }
 .follow-me li a[href*="amazon.co.jp"]::before,
-.follow-me li a[href*="amazon.com"]::before,        { content: "\f270"; }
+.follow-me li a[href*="amazon.com"]::before         { content: "\f270"; }
 .follow-me li a[href*="codepen.io"]::before         { content: "\f1cb"; }
 .follow-me li a[href*="delicious.com"]::before      { content: "\f1a5"; }
 .follow-me li a[href*="deviantart.com"]::before     { content: "\f1bd"; }
@@ -154,7 +179,7 @@ li a {
 .follow-me li a[href$="/subscribe"]::before         { content: "\f000"; font-family: blogicon; }
 
 .follow-me li a[href*="amazon.co.jp"]:hover::before,
-.follow-me li a[href*="amazon.com"]:hover::before,        { background-color: #ff9900; }
+.follow-me li a[href*="amazon.com"]:hover::before         { background-color: #ff9900; }
 .follow-me li a[href*="codepen.io"]:hover::before         { background-color: #000000; }
 .follow-me li a[href*="delicious.com"]:hover::before      { background-color: #3399ff; }
 .follow-me li a[href*="deviantart.com"]:hover::before     { background-color: #05cc47; }
@@ -193,3 +218,17 @@ li a {
 .follow-me li a[href*="youtube.com"]:hover::before        { background-color: #cd201f; }
 .follow-me li a[href$="/feed"]:hover::before              { background-color: #ffa500; }
 .follow-me li a[href$="/subscribe"]:hover::before         { background-color: #363636; }
+
+.blog-about{
+  position: relative;
+  margin-top: 0px;
+  top: 110px;
+  text-align: center;
+}
+
+.portfolio-about{
+  position: relative;
+  margin-top: 0px;
+  top: 110px;
+  text-align: center;
+}
